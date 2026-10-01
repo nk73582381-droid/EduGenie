@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduGenie</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎓 EduGenie</h1>
+        <p>Google Gemini Powered Learning Assistant</p>
+
+        <div class="card">
+            <h2>Ask a Question</h2>
+
+            <input
+                type="text"
+                id="question"
+                placeholder="Example: Which is the largest ocean?"
+            >
+
+            <button onclick="askQuestion()">Ask Gemini</button>
+        </div>
+
+        <div class="card">
+            <h2>Explain a Topic</h2>
+
+            <input
+                type="text"
+                id="topic"
+                placeholder="Example: Explain Pythagoras Theorem"
+            >
+
+            <button onclick="explainTopic()">Explain</button>
+        </div>
+
+        <div class="card">
+            <h2>Generate Quiz</h2>
+
+            <input
+                type="text"
+                id="quizTopic"
+                placeholder="Example: Pythagoras Theorem"
+            >
+
+            <button onclick="generateQuiz()">Generate Quiz</button>
+        </div>
+
+        <div class="result">
+            <h2>AI Response</h2>
+            <p id="result">Your answer will appear here...</p>
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
